@@ -5,7 +5,7 @@ import java.util.Random;
 public class test2 {
     static LinkedList<position> path = new LinkedList<position>();
     static ArrayList<String> option = new ArrayList<String>();
-    static int [][] maze = new int[4][4];
+    static int [][] maze = new int[11][11];
 
 
     public static void main(String[] args) {
@@ -24,18 +24,15 @@ do {
     option.clear();
     count++;
 
-    if (count == 15)
+    if (path.size() <= 1)
     {
+        System.out.println("no path");
         break;
     }
 }while (done != true);
         {
             System.out.println("completed");
         }
-
-
-
-
 
     }
 
